@@ -18,4 +18,23 @@
         </activity>
     </application>
 
+    <!--
+    <permission-group android:name="android.permission-group.CALENDAR"
+        android:label="android.permission-group.CALENDAR"
+        android:permissionGroupFlags="personalInfo"
+        android:priority="290" />
+    -->
+    <!-- Allows an application to read the user's calendar data.
+    <permission android:name="android.permission.READ_CALENDAR"
+        android:permissionGroup="android.permission-group.PERSONAL_INFO"
+        android:protectionLevel="dangerous"
+        android:label="android.permission.READ_CALENDAR" />
+    -->
+    <!-- Allows an application to write (but not read) the user's
+         calendar data.
+    <permission android:name="android.permission.WRITE_CALENDAR"
+        android:permissionGroup="android.permission-group.PERSONAL_INFO"
+        android:protectionLevel="dangerous"
+        android:label="android.permission.WRITE_CALENDAR" />
+    -->
 </manifest>

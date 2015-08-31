@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void accessCalendar() {
+        // SDK 23 and up; do we need to check Build.VERSION.CODENAME == "MNC" ?
         if (checkSelfPermission(Manifest.permission.WRITE_CALENDAR)
                 != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_CALENDAR},

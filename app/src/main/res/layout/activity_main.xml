@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddEventClicked"
+        android:text="Add Calendar Event"
+        android:background="#ffda6d"
+        android:textColor="#484848"
+        android:layout_weight="0.19" />
+
+    <Button
+        android:id="@+id/addEventButton2"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:onClick="onAddEventClicked2"
+        android:text="Add Calendar Event2"
+        android:background="#a2efff"
+        android:textColor="#484848"
+        android:layout_weight="0.72" />
+
+</LinearLayout>

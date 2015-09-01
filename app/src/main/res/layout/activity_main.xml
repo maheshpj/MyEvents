@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onMapClicked"
-        android:text="Show Map"
+        android:text="Map and Direction"
         android:background="#ffc11e"
         android:textColor="#484848" />
 
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onShareClicked"
-        android:text="Share"
+        android:text="Share with friends"
         android:background="#ffaf3d"
         android:textColor="#484848" />
 

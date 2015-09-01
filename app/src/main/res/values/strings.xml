@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Events</string>
     <string name="activity_map">MapActivity</string>
+    <string name="activity_share">ShareActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -9,4 +10,7 @@
     <string name="dialog_title">Alert</string>
     <string name="ok">Yes</string>
     <string name="cancel">No</string>
+    <string name="send_to">Share with friends</string>
+
+
 </resources>

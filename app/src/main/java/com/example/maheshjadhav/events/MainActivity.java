@@ -59,6 +59,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onShareClicked(View view) {
+        shareEvent();
+    }
+
+    private void shareEvent() {
+        String eventName = "My Event";
+        String eventUrl = "https://www.myevent.com";
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Check out this event! " + eventName
+                + " " + eventUrl);
+        sendIntent.setType("text/plain");
+        startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.send_to)));
     }
 
     private void accessCalendar() {

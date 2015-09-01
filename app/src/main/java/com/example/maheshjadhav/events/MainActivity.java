@@ -53,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
         accessCalendar();
     }
 
+    public void onMapClicked(View view) {
+        Intent mapIntent = new Intent(this, MapActivity.class);
+        startActivity(mapIntent);
+    }
+
+    public void onShareClicked(View view) {
+    }
+
     private void accessCalendar() {
         // SDK 23 and up; do we need to check Build.VERSION.CODENAME == "MNC" ?
         requestPermissions(new String[]{Manifest.permission.WRITE_CALENDAR},

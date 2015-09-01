@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="1">
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/addEventButton"
@@ -15,6 +15,24 @@
         android:onClick="onAddEventClicked"
         android:text="Add Calendar Event"
         android:background="#ffda6d"
+        android:textColor="#484848" />
+
+    <Button
+        android:id="@+id/addMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onMapClicked"
+        android:text="Show Map"
+        android:background="#ffc11e"
+        android:textColor="#484848" />
+
+    <Button
+        android:id="@+id/addShareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onShareClicked"
+        android:text="Share"
+        android:background="#ffaf3d"
         android:textColor="#484848" />
 
 </LinearLayout>

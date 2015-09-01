@@ -53,19 +53,10 @@ public class MainActivity extends AppCompatActivity {
         accessCalendar();
     }
 
-    public void onAddEventClicked2(View view) {
-        this.calContext = view.getContext();
-        showAllowAccessPopup();
-    }
-
     private void accessCalendar() {
         // SDK 23 and up; do we need to check Build.VERSION.CODENAME == "MNC" ?
-        if (checkSelfPermission(Manifest.permission.WRITE_CALENDAR)
-                != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.WRITE_CALENDAR},
-                    EVENTS_PERMISSION_REQUEST_WRITE_CALENDAR);
-            return;
-        }
+        requestPermissions(new String[]{Manifest.permission.WRITE_CALENDAR},
+                EVENTS_PERMISSION_REQUEST_WRITE_CALENDAR);
     }
 
     @Override

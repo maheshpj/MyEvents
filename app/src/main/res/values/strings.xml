@@ -12,5 +12,7 @@
     <string name="cancel">No</string>
     <string name="send_to">Share with friends</string>
 
+    <color name="bg_color">#ffffff</color>
+
 
 </resources>
